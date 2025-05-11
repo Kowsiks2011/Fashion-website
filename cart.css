@@ -1,0 +1,223 @@
+body {
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+#top {
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    background-color: #F1F6FC;
+    padding: 1rem;
+}
+
+#firstnav {
+    background-color: #071937;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white !important;
+}
+
+#input {
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#secondnav {
+    background-color: #F1F6FC;
+    padding: 1rem;
+    display: flex;
+}
+
+#snfont {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+#snfont:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+.category {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+/* header end -----------------------------------------------------------*/
+#bc {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+#text {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#reduce,
+#add,
+#display {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.final {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#subtotal {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#total {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+#checkbtn {
+    padding: 2px 50px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: #071937;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+}
+
+#col1 {
+    background-color: #F1F6FC;
+    padding: 2em;
+    border-radius: 2%;
+}
+
+#col2 {
+    background-color: #F1F6FC;
+    padding: 2em;
+    border-radius: 3%;
+    height: fit-content;
+}
+
+#hund {
+    font-size: 1.2rem;
+}
+
+/* winter----------------------------------------------------------------- */
+#rate {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#ratetext {
+    font-weight: 500;
+    margin-top: -20px;
+}
+
+#wintext {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Cart item styling */
+#tag {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-group button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* footer-------------------------------------------------------------- */
+#foot-cont,
+a {
+    color: white;
+    font-size: 1.4rem;
+}
+
+#alinks a:hover {
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+
+#footer {
+    background-color: #071937;
+}
+
+.copy {
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: #F1F6FC;
+    text-align: center;
+}
+
+/* mquery */
+@media (max-width: 576px) {
+    #foot-cont {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .navigate,
+    .address,
+    .company {
+        margin-bottom: 2rem;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .navigate a {
+        font-size: 1.2rem;
+    }
+    
+    .address img {
+        max-width: 120px;
+    }
+    
+    #cardmq {
+        margin-left: 3.7em;
+    }
+    
+    #col1,
+    #col2 {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    #tag {
+        flex-direction: column;
+    }
+    
+    .btn-group {
+        margin-top: 15px;
+        justify-content: center;
+    }
+}

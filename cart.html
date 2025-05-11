@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>StyleCo</title>
+</head>
+
+<body>
+    <header>
+        <p id="top" class="text-center mb-0">Sale : upto 70% off*</p>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg" id="firstnav">
+            <div class="container-fluid p-3">
+                <a class="navbar-brand text-light ms-5" href="#">StyleCo.</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <form class="d-flex ms-auto my-2 my-lg-0 " role="search" style="max-width: 800px; width: 100%;">
+                        <div class="position-relative w-100">
+                            <input class="form-control ps-5 rounded-pill" id="input" type="search"
+                                placeholder="Search..." aria-label="Search">
+                            <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-4 fs-4"></i>
+                        </div>
+                    </form>
+
+                    <ul class="navbar-nav me-auto d-flex align-items-center">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="cart.html">
+                                <img src="images/cart.png" alt="Cart" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="wishlist.html">
+                                <img src="images/heart icon.png" alt="Wishlist" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                        <li class="nav-item px-2 d-flex align-items-center">
+                            <span class="text-light fs-3" style="line-height: 1;">|</span>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">
+                                <img src="images/user icon.png" alt="Account" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- second - navbar -->
+        <nav class="navbar navbar-expand-lg" id="secondnav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark home" id="snfont" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link text-dark category" id="snfont" href="category.html"
+                                role="button">Categories</a>
+                        </li>
+                        <li class="nav-item dropdown pe-4">
+                            <a class="nav-link dropdown-toggle text-dark category" id="snfont" href="" role="button"
+                                data-bs-toggle="dropdown">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Baby Cloths</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Boys</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Girls</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Men</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Women</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Sunny Wear</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Winter Wear</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark" id="snfont" href="#">Sale</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark about" id="snfont" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- breadcrum------------------------------------------------------------>
+        <nav style="--bs-breadcrumb-divider: '>' ;" aria-label="breadcrumb" class="m-md-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-dark px-2"
+                        id="bc">Home</a></li>
+                <li class="breadcrumb-item px-2" id="bc" aria-current="page">My Cart</li>
+            </ol>
+        </nav>
+    </header>
+    <!-- breadcrum2-------------------------------------------------------------------->
+    <nav style="--bs-breadcrumb-divider: '>' ;" id="bc" aria-label="breadcrumb" class="m-md-5">
+        <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item px-2" id="bc" aria-current="page">BAG</li>
+            <li class="breadcrumb-item"><a href="address.html" class="text-decoration-none text-secondary px-2"
+                    id="bc">ADDRESS</a></li>
+            <li class="breadcrumb-item"><a href="payment.html" class="text-decoration-none text-secondary px-2"
+                    id="bc">PAYMENT</a></li>
+        </ol>
+    </nav>
+    <!-- category------------------------------------------------------------>
+
+    <div class="container">
+        <div class="row">
+            <!-- col1 -->
+            <div class="col-md-7 me-md-4" id="col1">
+                <!-- tag1 -->
+                <div id="tag" class="d-flex flex-wrap mb-3">
+                    <img src="images/cart image 1.png" alt="cart1" class="img-fluid rounded" style="width: 200px; height: 220px;">
+                    <div class="row flex-grow-1">
+                        <div class="col-md-10">
+                            <div class="text-container mx-4">
+                                <p class="text" id="text">Rust Printed Cotton</p>
+                                <p class="text" id="text">Kurta</p>
+                                <p class="text" id="text"><b>LIBAS</b></p>
+                                <p class="text price" id="price1" data-price="1200"><b>₹ 1200</b></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center justify-content-end">
+                            <div class="btn-group">
+                                <button class="btn reduce" data-item="1" id="reduce">-</button>
+                                <div id="quantity1" class="px-4 border border-3 rounded-pill border-dark">1</div>
+                                <button class="btn add" data-item="1" id="add">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- tag2 -->
+                <div id="tag" class="d-flex flex-wrap mb-3">
+                    <img src="images/cart image 2.png" alt="cart2" class="img-fluid rounded" style="width: 200px; height: 220px;">
+                    <div class="row flex-grow-1">
+                        <div class="col-md-10">
+                            <div class="text-container mx-4">
+                                <p class="text" id="text">Polka Dot Mini A-line</p>
+                                <p class="text" id="text">Skirt</p>
+                                <p class="text" id="text"><b>SEZANE</b></p>
+                                <p class="text price" id="price2" data-price="820"><b>₹ 820</b></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center justify-content-end">
+                            <div class="btn-group">
+                                <button class="btn reduce" data-item="2" id="reduce">-</button>
+                                <div id="quantity2" class="px-4 border border-3 rounded-pill border-dark">1</div>
+                                <button class="btn add" data-item="2" id="add">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- tag3 -->
+                <div id="tag" class="d-flex flex-wrap mb-3">
+                    <img src="images/cart image 3.png" alt="cart3" class="img-fluid rounded" style="width: 200px; height: 220px;">
+                    <div class="row flex-grow-1">
+                        <div class="col-md-10">
+                            <div class="text-container mx-4">
+                                <p class="text" id="text">Black T-Shirt</p>
+                                <p class="text" id="text"><b>NEXTT</b></p>
+                                <p class="text price" id="price3" data-price="1200"><b>₹ 1200</b></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center justify-content-end">
+                            <div class="btn-group">
+                                <button class="btn reduce" data-item="3" id="reduce">-</button>
+                                <div id="quantity3" class="px-4 border border-3 rounded-pill border-dark">1</div>
+                                <button class="btn add" data-item="3" id="add">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- tag4 -->
+                <div id="tag" class="d-flex flex-wrap mb-3">
+                    <img src="images/cart image 4.png" alt="cart4" class="img-fluid rounded" style="width: 200px; height: 220px;">
+                    <div class="row flex-grow-1">
+                        <div class="col-md-10">
+                            <div class="text-container mx-4">
+                                <p class="text" id="text">Blooming Jean</p>
+                                <p class="text" id="text">Onesie</p>
+                                <p class="text" id="text"><b>SNOOZIP</b></p>
+                                <p class="text price" id="price4" data-price="1070"><b>₹ 1070</b></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center justify-content-end">
+                            <div class="btn-group">
+                                <button class="btn reduce" data-item="4" id="reduce">-</button>
+                                <div id="quantity4" class="px-4 border border-3 rounded-pill border-dark">1</div>
+                                <button class="btn add" data-item="4" id="add">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- tag5 -->
+                <div id="tag" class="d-flex flex-wrap mb-3">
+                    <img src="images/cart image 5.png" alt="cart5" class="img-fluid rounded" style="width: 200px; height: 220px;">
+                    <div class="row flex-grow-1">
+                        <div class="col-md-10">
+                            <div class="text-container mx-4">
+                                <p class="text" id="text">Soft Kintted Sweater</p>
+                                <p class="text" id="text">Shirt</p>
+                                <p class="text" id="text"><b>EMY LUXE</b></p>
+                                <p class="text price" id="price5" data-price="940"><b>₹ 940</b></p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center justify-content-end">
+                            <div class="btn-group">
+                                <button class="btn reduce" data-item="5" id="reduce">-</button>
+                                <div id="quantity5" class="px-4 border border-3 rounded-pill border-dark">1</div>
+                                <button class="btn add" data-item="5" id="add">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- col1 end----------------------------- -->
+
+            <!-- col2 -->
+            <div class="col-md-4 ms-md-4" id="col2">
+                <div class="row" id="subtotal">
+                    <div class="col"> <p class="text">Subtotal</p> </div>
+                    <div class="col text-end"> <p class="text" id="subtotal-amount">₹ 4580</p></div>
+                </div>
+
+                <div class="row final" id="delivery">
+                    <div class="col"> <p class="text">Delivery Charges</p> </div>
+                    <div class="col text-end"> <p class="text">₹ 0</p></div>
+                </div>
+
+                <div class="row final" id="discount">
+                    <div class="col"> <p class="text">Discount</p> </div>
+                    <div class="col text-end"> <p class="text">-₹ 220</p></div>
+                </div>
+
+                <hr id="line">
+
+                <div class="row" id="total">
+                    <div class="col"> <p class="text">TOTAL</p> </div>
+                    <div class="col text-end"> <p class="text" id="total-amount">₹ 4360</p></div>
+                </div>
+
+                <div class="container d-flex justify-content-center py-4"> 
+                    <a href="address.html" class="btn mx-auto" id="checkbtn">CHECKOUT</a>
+                </div>
+                <p class="text-center py-md-4" id="hund"><img src="images/Lock.png" class="px-2">100% Secure Payments</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- winter-cont---------------->
+    <p class="text p-5 mb-0 py-sm-4" id="wintext">RECENTLY VIEWED</p>
+    <div class="p-5" id="winter-cont">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-60 border-0">
+                    <a href=""><img src="images/reg winter 1.png" class="card-img-top" alt="reg winter1"></a>
+                    <div class="card-body px-0">
+                        <div class="card-title" id="rate">
+                            <p>Roy</p>
+                            <p>₹850</p>
+                        </div>
+                        <p class="card-text fs-5" id="ratetext">Leather Leggings</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-60 border-0">
+                    <a href=""><img src="images/reg winter 2.png" class="card-img-top" alt="reg winter2"></a>
+                    <div class="card-body px-0">
+                        <div class="card-title" id="rate">
+                            <p>Alder Fleece</p>
+                            <p>₹900</p>
+                        </div>
+                        <p class="card-text fs-5" id="ratetext">Lined Coords</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-60 border-0">
+                    <a href=""><img src="images/reg winter 3.png" class="card-img-top" alt="reg winter3"></a>
+                    <div class="card-body px-0">
+                        <div class="card-title" id="rate">
+                            <p>Nova Elegant</p>
+                            <p>₹1200</p>
+                        </div>
+                        <p class="card-text fs-5" id="ratetext">Pleated Blazzer Dress</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-60 border-0">
+                    <a href=""><img src="images/reg winter 4.png" class="card-img-top" alt="reg winter4"></a>
+                    <div class="card-body px-0">
+                        <div class="card-title" id="rate">
+                            <p>Emy Luxe</p>
+                            <p>₹740</p>
+                        </div>
+                        <p class="card-text fs-5" id="ratetext">Soft Knit Sweater</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- winter-cont-end-------------------------------------------------->
+
+    <!-- footer---------------------------------------------------------------->
+    <footer class="py-md-5" id="footer">
+        <div class="d-flex justify-content-around flex-wrap" id="foot-cont">
+            <div class="navigate d-flex flex-column flex-wrap" id="alinks">
+                <h3 class="text-decoration-underline mb-4">NAVIGATE</h3>
+                <a href="refund.html" class="text-decoration-none">Replacements, Returns & Refunds</a>
+                <a href="newspromotion.html" class="text-decoration-none">News & Promotions</a>
+                <a href="about.html" class="text-decoration-none">About Us</a>
+                <a href="termsofservice.html" class="text-decoration-none">Terms of Service</a>
+                <a href="privacy.html" class="text-decoration-none">Privacy Policy</a>
+                <a href="htorder.html" class="text-decoration-none">How to Order</a>
+            </div>
+
+            <div class="address text-center">
+                <h3 class="text-decoration-underline mb-4 fs-4"><img src="images/instore icon.png"
+                        class="img-fluid px-2">IN-STORE SHOPPING
+                </h3>
+                <p>House of StyleCo,</p>
+                <p>South Fairlands,</p>
+                <p>Salem - 636302</p>
+                <img src="images/social media icons.png" class="img-fluid my-5">
+            </div>
+
+            <div class="company">
+                <h3 class="text-decoration-underline mb-4 fs-4">StyleCo,</h3>
+                <p>Reg: SI203014054</p>
+                <p>TIN: 109201GST1204</p>
+                <p>Phone: +91 90121 90121</p>
+                <p>Email: styleco@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <div class="copy py-3">
+        <p>StyleCo, <img src="images/copyright icon.png" class="img-fluid"> 2022</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+        
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize quantities and prices
+            const items = [
+                { id: 1, price: 1200, quantity: 1 },
+                { id: 2, price: 820, quantity: 1 },
+                { id: 3, price: 1200, quantity: 1 },
+                { id: 4, price: 1070, quantity: 1 },
+                { id: 5, price: 940, quantity: 1 }
+            ];
+            
+            const discount = 220;
+            
+            // Calculate initial totals
+            updateTotals();
+            
+            // Add event listeners to all quantity buttons
+            document.querySelectorAll('.add').forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemId = parseInt(this.getAttribute('data-item'));
+                    const item = items.find(i => i.id === itemId);
+                    
+                    if (item && item.quantity < 10) { // Limit to 10 items
+                        item.quantity++;
+                        document.getElementById(`quantity${itemId}`).textContent = item.quantity;
+                        updateTotals();
+                    }
+                });
+            });
+            
+            document.querySelectorAll('.reduce').forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemId = parseInt(this.getAttribute('data-item'));
+                    const item = items.find(i => i.id === itemId);
+                    
+                    if (item && item.quantity > 1) { // Don't go below 1
+                        item.quantity--;
+                        document.getElementById(`quantity${itemId}`).textContent = item.quantity;
+                        updateTotals();
+                    }
+                });
+            });
+            
+            function updateTotals() {
+                // Calculate subtotal
+                let subtotal = 0;
+                items.forEach(item => {
+                    subtotal += item.price * item.quantity;
+                });
+                
+                // Calculate total after discount
+                const total = subtotal - discount;
+                
+                // Update the display
+                document.getElementById('subtotal-amount').textContent = `₹ ${subtotal.toLocaleString()}`;
+                document.getElementById('total-amount').textContent = `₹ ${total.toLocaleString()}`;
+            }
+            
+            // Search functionality
+            const searchForm = document.querySelector('form[role="search"]');
+            const searchInput = document.getElementById('input');
+            
+            if (searchForm) {
+                searchForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    handleSearch();
+                });
+                
+                document.querySelector('.bi-search').addEventListener('click', function() {
+                    handleSearch();
+                });
+            }
+            
+            function handleSearch() {
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                
+                const searchMap = {
+                    'men': 'men.html',
+                    'man': 'men.html',
+                    'male': 'men.html',
+                    'women': 'women.html',
+                    'woman': 'women.html',
+                    'female': 'women.html',
+                    'girl': 'girls.html',
+                    'girls': 'girls.html',
+                    'boy': 'boys.html',
+                    'boys': 'boys.html',
+                    'baby': 'newborn.html',
+                    'babies': 'newborn.html',
+                    'newborn': 'newborn.html',
+                    'infant': 'newborn.html'
+                };
+                
+                for (const [key, value] of Object.entries(searchMap)) {
+                    if (searchTerm.includes(key)) {
+                        window.location.href = value;
+                        return;
+                    }
+                }
+                
+                alert('No matching category found. Please try searching for: men, women, girls, boys, or baby');
+            }
+        });
+    </script>
+</body>
+</html>

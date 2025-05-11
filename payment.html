@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>StyleCo</title>
+</head>
+
+<body>
+    <header>
+        <p id="top" class="text-center mb-0">Sale : upto 70% off*</p>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg" id="firstnav">
+            <div class="container-fluid p-3">
+                <!-- Left-aligned brand -->
+                <a class="navbar-brand text-light ms-5" href="#">StyleCo.</a>
+
+                <!-- Toggler button (moved outside the collapsible content) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Centered search form -->
+                    <form class="d-flex ms-auto my-2 my-lg-0 " role="search" style="max-width: 800px; width: 100%;">
+                        <div class="position-relative w-100">
+                            <input class="form-control ps-5 rounded-pill" id="input" type="search"
+                                placeholder="Search..." aria-label="Search">
+                            <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-4 fs-4"></i>
+                        </div>
+                    </form>
+
+                    <!-- Right-aligned icons -->
+                    <ul class="navbar-nav me-auto d-flex align-items-center">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="cart.html">
+                                <img src="images/cart.png" alt="Cart" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="wishlist.html">
+                                <img src="images/heart icon.png" alt="Wishlist" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                        <li class="nav-item px-2 d-flex align-items-center">
+                            <span class="text-light fs-3" style="line-height: 1;">|</span>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">
+                                <img src="images/user icon.png" alt="Account" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- second - navbar -->
+        <nav class="navbar navbar-expand-lg" id="secondnav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark home" id="snfont" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link  text-dark category" id="snfont" href="category.html"
+                                role="button">Categories</a>
+                        </li>
+                        <li class="nav-item dropdown pe-4">
+
+
+                            <a class="nav-link dropdown-toggle text-dark category" id="snfont" href="" role="button"
+                                data-bs-toggle="dropdown">
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Baby Cloths</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Boys</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Girls</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Men</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Women</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Sunny Wear</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Winter Wear</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark" id="snfont" href="#">Sale</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark about" id="snfont" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- breadcrum------------------------------------------------------------>
+        <nav style="--bs-breadcrumb-divider: '>' ;" aria-label="breadcrumb" class="m-md-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-dark px-2"
+                        id="bc">Home</a></li>
+                <li class="breadcrumb-item px-2" id="bc" aria-current="page">My Cart</li>
+            </ol>
+        </nav>
+    </header>
+    <!-- breadcrum2-------------------------------------------------------------------->
+    <nav style="--bs-breadcrumb-divider: '>' ;" id="bc" aria-label="breadcrumb" class="m-md-5">
+        <ol class="breadcrumb d-flex justify-content-center">
+         
+           <li class="breadcrumb-item"><a href="cart.html" class="text-decoration-none text-dark px-2"
+            id="bc">BAG</a></li>
+            <li class="breadcrumb-item"><a href="address.html" class="text-decoration-none text-dark px-2"
+                id="bc">ADDRESS</a></li>
+                <li class="breadcrumb-item px-2" id="bc" aria-current="page">PAYMENT</li>
+        </ol>
+    </nav>
+    <!-- category------------------------------------------------------------>
+
+    <div class="container my-md-5 my-sm-5">
+        
+
+        <div class="row my-sm-5">
+            <!-- col1 -->
+            <div class="col-md-6 me-md-5" id="col1">
+                <p class="text text-wrap" id="portalhead">Choose Your Payment Method</p>
+                <!--p1  -->
+                <div class="d-flex justify-content-between align-items-center py-md-4">
+                <div class="form-check ms-3">
+                    <input class="form-check-input fs-3" type="radio" name="radioDefault" id="radioDefault1">
+                    <label class="form-check-label" for="radioDefault1" id="portal">
+                      PhonePe
+                    </label>
+                  </div>
+                  <img src="images/phonepe.png" alt="phonepe" class="img-fluid">
+                  </div>
+                   <!-- p2 -->
+                   <div class="d-flex justify-content-between align-items-center py-md-4">
+                    <div class="form-check ms-3">
+                        <input class="form-check-input fs-3" type="radio" name="radioDefault" id="radioDefault1">
+                        <label class="form-check-label" for="radioDefault1" id="portal">
+                          Google Pay
+                        </label>
+                      </div>
+                      <img src="images/gpay.png" alt="gpay" class="img-fluid">
+                      </div>
+                       <!-- p3 -->
+                   <div class="d-flex justify-content-between align-items-center py-md-4">
+                    <div class="form-check ms-3">
+                        <input class="form-check-input fs-3" type="radio" name="radioDefault" id="radioDefault1">
+                        <label class="form-check-label" for="radioDefault1" id="portal">
+                          Pay Pal
+                        </label>
+                      </div>
+                      <img src="images/paypal.png" alt="paypal" class="img-fluid">
+                      </div>
+                         <!-- p4 -->
+                   <div class="d-flex justify-content-between align-items-center py-md-4">
+                    <div class="form-check ms-3">
+                        <input class="form-check-input fs-3 " type="radio" name="radioDefault" id="cvisible" href="">
+                        <label class="form-check-label" for="radioDefault1" id="portal">
+                          Credit Card
+                        </label>
+                      </div>
+                      <img src="images/master card.png" class="ms-auto" alt="mastercard"><img src="images/visa.png" alt="visacard" class="img-fluid">
+                      </div>
+                     <!--credit card content  -->
+                     <div class="container mb-sm-4 ccont">
+                        <p class="text" id="crtext">Save money transfer using bank account Visa, Mastero</p>
+
+                        <form >
+                            <div class="ccard cctex my-4">
+                            <label for="number"> CREDIT CARD NUMBER</label>
+                            <input type="text" class="number" placeholder="**** **** **** ****" required>
+                            </div>
+
+                            <div class="cvv cctex d-flex justify-content-between flex-wrap">
+                                <div class="py-3"><label for="number"> CVV CODE</label>
+                            <input type="text" class="number" placeholder="***" required></div>
+                               <div class="py-3"> <label for="number"> EXPIRY DATE</label>
+                            <input type="date" class="number" placeholder="MM/YY" required></div> 
+                           
+                            </div>
+
+                            <div class="name cctex my-2">
+                                <label for="name">NAME ON CARD</label>
+                                <input type="text" placeholder="Enter Your name on the Card">
+                            </div>
+                        </form>
+
+                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                </div>
+            <!-- col1 end----------------------------- -->
+
+
+
+             <!-- col2 -->
+             <div class="col-md-4 ms-md-5 my-sm-5" id="col2">
+                <div class="row" id="subtotal">
+                    <div class="col"> <p class="text">Subtotal</p> </div>
+                    <div class="col text-end"> <p class="text">₹ 4580</p></div>
+                </div>
+
+                <div class="row final" id="delivery">
+                    <div class="col"> <p class="text">Delivery Charges</p> </div>
+                    <div class="col text-end"> <p class="text">₹ 0</p></div>
+                </div>
+
+                <div class="row final" id="discount">
+                    <div class="col"> <p class="text">Discount</p> </div>
+                    <div class="col text-end"> <p class="text">-₹ 220</p></div>
+                </div>
+
+                <hr id="line">
+
+                <div class="row" id="total">
+                    <div class="col"> <p class="text">TOTAL</p> </div>
+                    <div class="col text-end"> <p class="text">₹ 4360</p></div>
+                </div>
+
+                <div class="container d-flex justify-content-center py-4"> <a href="last.html" class="btn mx-auto" id="ptpbtn">PROCEED TO PAY</a></div>
+                <p class="text-center py-md-4" id="hund"><img src="images/Lock.png" class="px-2">100% Secure Payments</p>
+            </div>
+          
+           
+
+
+
+
+        </div>
+
+       
+
+
+    </div>
+
+    <!-- footer---------------------------------------------------------------->
+
+    <footer class="py-md-5" id="footer">
+
+
+        <div class=" d-flex justify-content-around flex-wrap" id="foot-cont">
+
+            <div class="navigate d-flex flex-column flex-wrap" id="alinks">
+                <h3 class="text-decoration-underline mb-4">NAVIGATE</h3>
+                <a href="refund.html" class="text-decoration-none">Replacements, Returns & Refunds</a>
+                <a href="newspromotion.html" class="text-decoration-none">News & Promotions</a>
+                <a href="about.html" class="text-decoration-none">About Us</a>
+                <a href="termsofservice.html" class="text-decoration-none">Terms of Service</a>
+                <a href="privacy.html" class="text-decoration-none">Privacy Policy</a>
+                <a href="htorder.html" class="text-decoration-none">How to Order</a>
+            </div>
+
+            <div class="address text-center">
+                <h3 class="text-decoration-underline mb-4 fs-4"><img src="images/instore icon.png"
+                        class="img-fluid px-2">IN-STORE SHOPPING
+                </h3>
+                <p>House of StyleCo,</p>
+                <p>South Fairlands,</p>
+                <p>Salem - 636302</p>
+                <img src="images/social media icons.png" class="img-fluid my-5">
+            </div>
+
+            <div class="company">
+                <h3 class="text-decoration-underline mb-4 fs-4">StyleCo,</h3>
+                <p>Reg: SI203014054</p>
+                <p>TIN: 109201GST1204</p>
+                <p>Phone: +91 90121 90121</p>
+                <p>Email: styleco@gmail.com</p>
+            </div>
+
+        </div>
+    </footer>
+    <div class="copy py-3">
+        <p>StyleCo, <img src="images/copyright icon.png" class="img-fluid"> 2022</p>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.querySelector('form[role="search"]');
+    const searchInput = document.getElementById('input');
+    
+    searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        handleSearch();
+    });
+    
+    // Also trigger search when search icon is clicked
+    document.querySelector('.bi-search').addEventListener('click', function() {
+        handleSearch();
+    });
+    
+    function handleSearch() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        
+        // Map search terms to corresponding pages
+        const searchMap = {
+            'men': 'men.html',
+            'man': 'men.html',
+            'male': 'men.html',
+            'women': 'women.html',
+            'woman': 'women.html',
+            'female': 'women.html',
+            'girl': 'girls.html',
+            'girls': 'girls.html',
+            'boy': 'boys.html',
+            'boys': 'boys.html',
+            'baby': 'newborn.html',
+            'babies': 'newborn.html',
+            'newborn': 'newborn.html',
+            'infant': 'newborn.html'
+        };
+        
+        // Check if search term matches any key in our map
+        for (const [key, value] of Object.entries(searchMap)) {
+            if (searchTerm.includes(key)) {
+                window.location.href = value;
+                return;
+            }
+        }
+        
+        // Default action if no match found
+        alert('No matching category found. Please try searching for: men, women, girls, boys, or baby');
+    }
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all payment method radio buttons
+    const paymentMethods = document.querySelectorAll('input[name="radioDefault"]');
+    const creditCardSection = document.querySelector('.ccont');
+    
+    // Initially hide the credit card form
+    creditCardSection.style.display = 'none';
+    
+    // Add event listeners to all payment methods
+    paymentMethods.forEach(method => {
+        method.addEventListener('change', function() {
+            if (this.id === 'cvisible') {
+                // Show credit card form if credit card is selected
+                creditCardSection.style.display = 'block';
+            } else {
+                // Hide credit card form for other payment methods
+                creditCardSection.style.display = 'none';
+            }
+        });
+    });
+});
+
+
+
+// payment
+document.addEventListener('DOMContentLoaded', function() {
+    const paymentMethods = document.querySelectorAll('input[name="radioDefault"]');
+    const proceedBtn = document.getElementById('ptpbtn');
+    
+    // Initially disable the button
+    proceedBtn.classList.add('disabled');
+    
+    // Add event listeners to all payment methods
+    paymentMethods.forEach(method => {
+        method.addEventListener('change', function() {
+            // Enable the button when any payment method is selected
+            proceedBtn.classList.remove('disabled');
+        });
+    });
+    
+    // Handle click on proceed button
+    proceedBtn.addEventListener('click', function(e) {
+        if (this.classList.contains('disabled')) {
+            e.preventDefault();
+            alert('Please select a payment method before proceeding');
+        }
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const paymentMethods = document.querySelectorAll('input[name="radioDefault"]');
+    const proceedBtn = document.getElementById('ptpbtn');
+    const creditCardSection = document.querySelector('.ccont');
+    const creditCardInputs = creditCardSection.querySelectorAll('input[required]');
+    
+    // Initially disable the button
+    proceedBtn.style.pointerEvents = 'none';
+    proceedBtn.style.opacity = '0.7';
+    
+    // Add event listeners to all payment methods
+    paymentMethods.forEach(method => {
+        method.addEventListener('change', function() {
+            if (this.id === 'cvisible') {
+                // Show credit card form
+                creditCardSection.style.display = 'block';
+                checkCreditCardFields();
+            } else {
+                // Hide credit card form and enable button for other methods
+                creditCardSection.style.display = 'none';
+                proceedBtn.style.pointerEvents = 'auto';
+                proceedBtn.style.opacity = '1';
+            }
+        });
+    });
+    
+    // Check credit card fields when they change
+    creditCardInputs.forEach(input => {
+        input.addEventListener('input', checkCreditCardFields);
+    });
+    
+    function checkCreditCardFields() {
+        if (!document.getElementById('cvisible').checked) return;
+        
+        let allFilled = true;
+        creditCardInputs.forEach(input => {
+            if (!input.value.trim()) {
+                allFilled = false;
+            }
+        });
+        
+        if (allFilled) {
+            proceedBtn.style.pointerEvents = 'auto';
+            proceedBtn.style.opacity = '1';
+        } else {
+            proceedBtn.style.pointerEvents = 'none';
+            proceedBtn.style.opacity = '0.7';
+        }
+    }
+    
+    // Handle click on proceed button
+    proceedBtn.addEventListener('click', function(e) {
+        if (this.style.pointerEvents === 'none') {
+            e.preventDefault();
+            if (document.getElementById('cvisible').checked) {
+                alert('Please fill all credit card details');
+            } else {
+                alert('Please select a payment method');
+            }
+        }
+    });
+});
+
+
+</script>
+</body>
+
+</html>

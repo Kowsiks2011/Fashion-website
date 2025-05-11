@@ -1,0 +1,183 @@
+body{
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+#top{
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    background-color: #F1F6FC;
+    padding: 1rem;
+}
+
+#firstnav{
+    background-color: #071937;
+    /* padding: 0.5rem 1.5rem; */
+}
+.navbar-brand{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+#input{
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#secondnav{
+    background-color: #F1F6FC;
+    padding: 1rem;
+    display: flex;
+}
+#snfont{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+}
+#snfont:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+.category{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+/* header end -----------------------------------------------------------*/
+#bc{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+#cathead{
+    font-weight: 700;
+    font-size: 2rem;
+}
+#cat-name{
+    font-size: 1.3rem;
+    font-weight: 600;  
+}
+#dress{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+del{
+    font-size: 1rem;
+    font-weight: 600;
+}
+#atcbtn{
+    font-weight: 700;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    background-color: #071937;
+    border-style: none;
+}
+#portal{
+    font-size: 1.8rem;
+}
+.subhead{
+    font-size: 2rem;
+    font-weight: 700;
+}
+/* col2--------------------------------------------------------------------- */
+#sort{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#dropdownMenuButton{
+   
+    padding: 0 4rem 0 0.5rem;
+    border-style: none;
+     font-size: 1.5rem;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    
+}
+#sort-menu{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #F1F6FC;
+    border: 2px solid black;
+}
+#sort:hover{
+
+    border-bottom: 2px solid black;
+    width: fit-content;
+}
+#one{
+    margin: 0 1%;
+     font-size: 1.8rem;
+     padding: 0.2em 0.8em;
+    font-weight: 500;
+    border: 2px solid #071937;
+    border-radius: 10px;
+    background-color: #071937;
+    color: white;
+}
+#two{
+    margin: 0 1%;
+    font-size: 1.8rem;
+    padding: 0.2em 0.6em;
+    font-weight: 500;
+    border: 2px solid #071937;
+    border-radius: 10px;
+}
+
+
+
+
+/* footer-------------------------------------------------------------- */
+#foot-cont,a{
+  color: white;
+ font-size: 1.4rem;
+}
+#alinks a:hover{
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+#footer{
+    background-color: #071937;
+    margin-top: 10%;
+}
+.copy{
+   font-size: 1.6rem; 
+   font-weight: 600;
+   background-color: #F1F6FC;
+   text-align: center;
+}
+/* mquery */
+@media (max-width: 576px) {
+    #foot-cont {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .navigate, .address, .company {
+      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 300px;
+    }
+    .navigate a {
+      font-size: 1.2rem;
+    }
+    .address img {
+      max-width: 120px;
+    }
+
+    #cardmq{
+        margin-left: 3.7em;
+    }
+    #topcont{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  @media (min-width: 578px) and (max-width:600px) {
+    #column2{
+        margin-left: 2%;
+    }
+  }

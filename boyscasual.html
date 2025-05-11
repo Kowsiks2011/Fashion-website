@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="boyscasual.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>StyleCo</title>
+</head>
+
+<body>
+    <header>
+        <p id="top" class="text-center mb-0">Sale : upto 70% off*</p>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg" id="firstnav">
+            <div class="container-fluid p-3">
+                <!-- Left-aligned brand -->
+                <a class="navbar-brand text-light ms-5" href="home.html">StyleCo.</a>
+
+                <!-- Toggler button (moved outside the collapsible content) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Centered search form -->
+                    <form class="d-flex ms-auto my-2 my-lg-0 " role="search" style="max-width: 800px; width: 100%;">
+                        <div class="position-relative w-100">
+                            <input class="form-control ps-5 rounded-pill" id="input" type="search"
+                                placeholder="Search..." aria-label="Search">
+                            <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-4 fs-4"></i>
+                        </div>
+                    </form>
+
+                    <!-- Right-aligned icons -->
+                    <ul class="navbar-nav me-auto d-flex align-items-center">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="cart.html">
+                                <img src="images/cart.png" alt="Cart" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="wishlist.html">
+                                <img src="images/heart icon.png" alt="Wishlist" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                        <li class="nav-item px-2 d-flex align-items-center">
+                            <span class="text-light fs-3" style="line-height: 1;">|</span>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">
+                                <img src="images/user icon.png" alt="Account" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- second - navbar -->
+        <nav class="navbar navbar-expand-lg" id="secondnav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark home" id="snfont" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link  text-dark category" id="snfont" href="category.html"
+                                role="button">Categories</a>
+                        </li>
+                        <li class="nav-item dropdown pe-4">
+
+
+                            <a class="nav-link dropdown-toggle text-dark category" id="snfont" href="" role="button"
+                                data-bs-toggle="dropdown">
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark" id="snfont" href="newborn.html">Baby Cloths</a>
+                                </li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="boys.html">Boys</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="girls.html">Girls</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="men.html">Men</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="women.html">Women</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Sunny Wear</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Winter Wear</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark" id="snfont" href="sale.html">Sale</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark about" id="snfont" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- breadcrum------------------------------------------------------------>
+        <nav style="--bs-breadcrumb-divider: '>' ;" aria-label="breadcrumb" class="m-md-5" id="bc">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-dark px-2"
+                        id="bc">Home</a></li>
+                <li class="breadcrumb-item"><a href="category.html" class="text-decoration-none text-dark px-2"
+                        id="bc">Categories</a></li>
+                <li class="breadcrumb-item"><a href="boys.html" class="text-decoration-none text-dark px-2"
+                        id="bc">Boys</a></li>
+                <li class="breadcrumb-item px-2" id="bc" aria-current="page">Casual Wear</li>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- category------------------------------------------------------------>
+
+    <div class="container">
+
+        <div class="row">
+            <!-- col1 -->
+            <div class="col-md-5 me-md-4 " id="col1">
+                <div class="product-gallery">
+                    <!-- Large image display -->
+                    <div class="large-image-container">
+                        <img id="largeImage" src="images/boys one product image.png" alt="Product main view">
+                    </div>
+                    <!-- Thumbnail images -->
+                    <div class="thumbnails">
+                        <img src="images/boys one product image.png" alt="Product view 1" class="thumbnail active"
+                            onclick="showLargeImage('product-large1.jpg')">
+                        <img src="images/boys one product image 2.png" alt="Product view 2" class="thumbnail"
+                            onclick="showLargeImage('product-large2.jpg')">
+                        <img src="images/boys one product image 3.png" alt="Product view 3" class="thumbnail"
+                            onclick="showLargeImage('product-large3.jpg')">
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- col1 end----------------------------- -->
+
+
+
+            <!-- col2 -->
+            <div class="col-md-6 ms-md-4 my-4" id="col2">
+                <p class="text"><strong>Boys</strong></p>
+                <hr id="line" style="border: 2px solid rgba(4, 4, 4, 0.759);">
+                <p class="text" id="text">Casual Wear</p>
+                <p class="text"><strong>NIKE</strong></p>
+                <p class="text"><strong>₹ 1400</strong></p>
+                <p class="text" id="text1">TAX INCLUDED | SHIPPING CALCULATED AT CHECKOUT</p>
+
+                <form>
+                    <label class="text" id="size"><strong>Size :</strong></label>
+                    <input type="text" id="sizeInput" value="XS" readonly>
+
+                    <!-- Bootstrap Dropdown -->
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle btndd" type="button" id="sizeDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Size
+                        </button>
+
+                        <ul class="dropdown-menu btndd" aria-labelledby="sizeDropdown">
+                            <li><a class="dropdown-item it" href="#" data-size="XS">XS</a></li>
+                            <li><a class="dropdown-item it" href="#" data-size="S">S</a></li>
+                            <li><a class="dropdown-item it" href="#" data-size="M">M</a></li>
+                            <li><a class="dropdown-item it" href="#" data-size="L">L</a></li>
+                            <li><a class="dropdown-item it" href="#" data-size="XL">XL</a></li>
+                            <li><a class="dropdown-item it" href="#" data-size="XXL">XXL</a></li>
+                        </ul>
+                    </div>
+                </form>
+
+
+
+                <div class=" d-flex align-items-center justify-content-start my-4">
+                    <div class="btn-group">
+                        <div id="reduce" class="btn">-</div>
+                        <div id="box" class="px-4 border border-3 rounded-pill border-dark">1</div>
+                        <div id="add" class="btn">+</div>
+                    </div>
+                </div>
+
+
+                <div class="container d-flex justify-content-between my-4">
+                    <a href="cart.html" class="btn px-md-5 w-50 mx-2" id="atc">ADD TO CART</a>
+                    <a href="cart.html" class="btn  px-md-5 w-50 mx-2" id="bn">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+        <!-- disclaimer section-------------------------------------------------->
+        <div class="container my-md-5 my-sm-4">
+            <div id="topic" class="d-flex justify-content-center">
+                <button class="btn text px-3 active" id="describe">DESCRIPTION</button>
+                <button class="btn text px-3" id="ship">SHIPPING & RETURN</button>
+            </div>
+            <div id="display">
+                <div id="description-content" class="content active">
+                    <p class="mb-0">Paperbag jeans</p>
+                    <p class="mb-0">REF: 87001063</p>
+                    <p class="mb-0">Denim style cotton fabric. Straight design Elastic paperbag washboard. Jeans with
+                        tie closure. The ecru colour has a total look.</p>
+                    <p class="mb-0">Composition: 100% cotton</p>
+                    <p class="mb-0">Designed in Barcelona</p>
+                    <p class="mb-0">Machining washing max 30°C / 85°F short spin dry.Do not bleach ironing max 110°C /
+                        230°F.Do not dry clean.Do not tumble dry.</p>
+                    <p class="mb-0">Item no: 115096</p>
+                </div>
+                <div id="shipping-content" class="content">
+                    <p class="mb-4">Delivery & Shipping</p>
+                    <p class="mb-0">we offer free delivery within Male' and Hulhumale' for orders over MVR 300.Delivery
+                        is made within 24 hours of purchase. Monday to Thursday, between 11am and 10pm.</p>
+                    <p class="mb-0">For orders under MVR 300, there is a flat delivery fee of MVR 20. Delivery is made.
+                    </p>
+                    <p class="mb-0">we do not ddeliver on Fridays or public holidays.</p>
+                    <p class="mb-0">Express Delivery</p>
+                    <p class="">We offer express delivery service within Male' for orders above MVR 1000.A delivery fee
+                        of MVR 100 applies.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- winter-cont---------------->
+        <p class="text p-5 mb-0 py-sm-4" id="wintext">RECENTLY VIEWED</p>
+        <div class="p-5" id="winter-cont">
+
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+
+                <div class="col">
+                    <div class="card h-60 border-0">
+                        <a href=""><img src="images/reg winter 1.png" class="card-img-top" alt="reg winter1"></a>
+                        <div class="card-body px-0">
+                            <div class="card-title" id="rate">
+                                <p>Roy</p>
+                                <p>₹850</p>
+                            </div>
+                            <p class="card-text fs-5" id="ratetext">Leather Leggings</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-60 border-0">
+                        <a href=""><img src="images/reg winter 2.png" class="card-img-top" alt="reg winter2"></a>
+                        <div class="card-body px-0">
+                            <div class="card-title" id="rate">
+                                <p>Alder Fleece</p>
+                                <p>₹900</p>
+                            </div>
+                            <p class="card-text fs-5" id="ratetext">Lined Coords</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-60 border-0">
+                        <a href=""><img src="images/reg winter 3.png" class="card-img-top" alt="reg winter3"></a>
+                        <div class="card-body px-0">
+                            <div class="card-title" id="rate">
+                                <p>Nova Elegant</p>
+                                <p>₹1200</p>
+                            </div>
+                            <p class="card-text fs-5" id="ratetext">Pleated Blazzer Dress</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-60 border-0">
+                        <a href=""><img src="images/reg winter 4.png" class="card-img-top" alt="reg winter4"></a>
+                        <div class="card-body px-0">
+                            <div class="card-title" id="rate">
+                                <p>Emy Luxe</p>
+                                <p>₹740</p>
+                            </div>
+                            <p class="card-text fs-5" id="ratetext">Soft Knit Sweater</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- winter-cont-end-------------------------------------------------->
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- footer---------------------------------------------------------------->
+
+    <footer class="py-md-5" id="footer">
+
+
+        <div class=" d-flex justify-content-around flex-wrap" id="foot-cont">
+
+            <div class="navigate d-flex flex-column flex-wrap" id="alinks">
+                <h3 class="text-decoration-underline mb-4">NAVIGATE</h3>
+                <a href="refund.html" class="text-decoration-none">Replacements, Returns & Refunds</a>
+                <a href="newspromotion.html" class="text-decoration-none">News & Promotions</a>
+                <a href="about.html" class="text-decoration-none">About Us</a>
+                <a href="termsofservice.html" class="text-decoration-none">Terms of Service</a>
+                <a href="privacy.html" class="text-decoration-none">Privacy Policy</a>
+                <a href="htorder.html" class="text-decoration-none">How to Order</a>
+            </div>
+
+            <div class="address text-center">
+                <h3 class="text-decoration-underline mb-4 fs-4"><img src="images/instore icon.png"
+                        class="img-fluid px-2">IN-STORE SHOPPING
+                </h3>
+                <p>House of StyleCo,</p>
+                <p>South Fairlands,</p>
+                <p>Salem - 636302</p>
+                <img src="images/social media icons.png" class="img-fluid my-5">
+            </div>
+
+            <div class="company">
+                <h3 class="text-decoration-underline mb-4 fs-4">StyleCo,</h3>
+                <p>Reg: SI203014054</p>
+                <p>TIN: 109201GST1204</p>
+                <p>Phone: +91 90121 90121</p>
+                <p>Email: styleco@gmail.com</p>
+            </div>
+
+        </div>
+    </footer>
+    <div class="copy py-3">
+        <p>StyleCo, <img src="images/copyright icon.png" class="img-fluid"> 2022</p>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const thumbnails = document.querySelectorAll('.thumbnail');
+
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', function () {
+                    // Get the corresponding large image path
+                    const largeImagePath = this.src.replace('thumb', 'large');
+
+                    // Update the main image
+                    document.getElementById('largeImage').src = largeImagePath;
+
+                    // Update active state
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const sizeInput = document.getElementById('sizeInput');
+            const sizeDropdown = document.getElementById('sizeDropdown');
+            const dropdownItems = document.querySelectorAll('.dropdown-item[data-size]');
+
+            // Initialize with current input value
+            sizeDropdown.textContent = sizeInput.value;
+
+            // Handle dropdown item selection
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const selectedSize = this.getAttribute('data-size');
+
+                    // Update input field
+                    sizeInput.value = selectedSize;
+
+                    // Update dropdown button text
+                    sizeDropdown.textContent = selectedSize;
+
+                    // Close the dropdown
+                    const dropdownInstance = bootstrap.Dropdown.getInstance(sizeDropdown);
+                    dropdownInstance.hide();
+                });
+            });
+        });
+
+
+        //  ------------------------------------describe---> ship--------------
+        const descriptionBtn = document.getElementById('describe');
+        const shipmentBtn = document.getElementById('ship');
+        const descriptionContent = document.getElementById('description-content');
+        const shippingContent = document.getElementById('shipping-content');
+        const buttons = [descriptionBtn, shipmentBtn];
+        const contents = [descriptionContent, shippingContent];
+
+        // Function to switch tabs
+        function switchTab(index) {
+            // Remove active class from all buttons and contents
+            buttons.forEach(btn => btn.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Add active class to selected button and content
+            buttons[index].classList.add('active');
+            contents[index].classList.add('active');
+        }
+
+        // Event listeners
+        descriptionBtn.addEventListener('click', () => switchTab(0));
+        shipmentBtn.addEventListener('click', () => switchTab(1));
+
+
+        // search
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchForm = document.querySelector('form[role="search"]');
+            const searchInput = document.getElementById('input');
+
+            searchForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                handleSearch();
+            });
+
+            // Also trigger search when search icon is clicked
+            document.querySelector('.bi-search').addEventListener('click', function () {
+                handleSearch();
+            });
+
+            function handleSearch() {
+                const searchTerm = searchInput.value.trim().toLowerCase();
+
+                // Map search terms to corresponding pages
+                const searchMap = {
+                    'men': 'men.html',
+                    'man': 'men.html',
+                    'male': 'men.html',
+                    'women': 'women.html',
+                    'woman': 'women.html',
+                    'female': 'women.html',
+                    'girl': 'girls.html',
+                    'girls': 'girls.html',
+                    'boy': 'boys.html',
+                    'boys': 'boys.html',
+                    'baby': 'newborn.html',
+                    'babies': 'newborn.html',
+                    'newborn': 'newborn.html',
+                    'infant': 'newborn.html'
+                };
+
+                // Check if search term matches any key in our map
+                for (const [key, value] of Object.entries(searchMap)) {
+                    if (searchTerm.includes(key)) {
+                        window.location.href = value;
+                        return;
+                    }
+                }
+
+                // Default action if no match found
+                alert('No matching category found. Please try searching for: men, women, girls, boys, or baby');
+            }
+        });
+
+
+
+        // add//remove
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const reduceBtn = document.getElementById('reduce');
+            const addBtn = document.getElementById('add');
+            const box = document.getElementById('box');
+
+            let quantity = 1; // Initial value
+
+            // Add button click handler
+            addBtn.addEventListener('click', function () {
+                if (quantity < 3) {
+                    quantity++;
+                    box.textContent = quantity;
+                    updateButtonStates();
+                }
+            });
+
+            // Reduce button click handler
+            reduceBtn.addEventListener('click', function () {
+                if (quantity > 1) {
+                    quantity--;
+                    box.textContent = quantity;
+                }
+            })});
+
+
+
+
+
+    </script>
+</body>
+
+</html>

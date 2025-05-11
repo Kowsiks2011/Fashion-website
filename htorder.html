@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="htorder.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>StyleCo</title>
+</head>
+
+<body>
+    <header>
+        <p id="top" class="text-center mb-0">Sale : upto 70% off*</p>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg" id="firstnav">
+            <div class="container-fluid p-3">
+                <!-- Left-aligned brand -->
+                <a class="navbar-brand text-light ms-5" href="#">StyleCo.</a>
+
+                <!-- Toggler button (moved outside the collapsible content) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Centered search form -->
+                    <form class="d-flex ms-auto my-2 my-lg-0 " role="search" style="max-width: 800px; width: 100%;">
+                        <div class="position-relative w-100">
+                            <input class="form-control ps-5 rounded-pill" id="input" type="search"
+                                placeholder="Search..." aria-label="Search">
+                            <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-4 fs-4"></i>
+                        </div>
+                    </form>
+
+                    <!-- Right-aligned icons -->
+                    <ul class="navbar-nav me-auto d-flex align-items-center">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="cart.html">
+                                <img src="images/cart.png" alt="Cart" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="wishlist.html">
+                                <img src="images/heart icon.png" alt="Wishlist" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                        <li class="nav-item px-2 d-flex align-items-center">
+                            <span class="text-light fs-3" style="line-height: 1;">|</span>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">
+                                <img src="images/user icon.png" alt="Account" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- second - navbar -->
+        <nav class="navbar navbar-expand-lg" id="secondnav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark home" id="snfont" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link  text-dark category" id="snfont" href="category.html"
+                                role="button">Categories</a>
+                        </li>
+                        <li class="nav-item dropdown pe-4">
+
+
+                            <a class="nav-link dropdown-toggle text-dark category" id="snfont" href="" role="button"
+                                data-bs-toggle="dropdown">
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Baby Cloths</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Boys</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Girls</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Men</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Women</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Sunny Wear</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Winter Wear</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark" id="snfont" href="#">Sale</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark about" id="snfont" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- breadcrum------------------------------------------------------------>
+        <nav style="--bs-breadcrumb-divider: '>' ;" aria-label="breadcrumb" class="m-md-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-dark px-2"
+                        id="bc">Home</a></li>
+                <li class="breadcrumb-item px-2" id="bc" aria-current="page">How to Order</li>
+            </ol>
+        </nav>
+    </header>
+    <!-- content-------------------------------------------------------------------->
+
+    <!-- paragraph------------------------------------------------------------>
+    <div class="m-md-5" id="paragraphs">
+
+        <div class="text-container1 py-4">
+          <p class="text mb-0">How to order: Browse through the category menu or type in the search box and then choose the product that you want, add to cart, check the quantity needed, enter your email address and the payment method that will be used. Once Sonee Sports receives the payment, we will process the order.</p>
+          <p class="text mb-0">Verification: Please keep your digital receipts after any transactions because we might need it for order verification purposes.</p>
+          <p class="text mb-0">Order Status: Once the order has been successfully processed: we start packing the order and shipping it the to courier within 24 hours. If 24 hours have passed, please wait for the delivery of the items and they will be processed as replacements. You will receive a tracking note if the order is by Post/Air Cargo</p>
+          <p class="text mb-0">Changing an order: If there is a need to change the size of an item that has already been paid for, please call us immediately since we normally process orders within 24 hours of the order and can change it for you before it ends. If you wish to change the item after receiving it, please contact us @ 3335995</p>
+          <p class="text">Problems with order received: If there any issues on the received items, please inform us through our contact platforms (social media accounts, website or telephone @ 3335995).</p>
+          <p class="text mt-5">Shipping and Delivery:</p>
+          <p class="text mb-0">Delivery: We provide shipping and delivery within Maldives through Maldives Post or Maldivian Air Cargo</p>
+          <p class="text mb-0">Delivery lead time: The website receives orders 24/7 but our office pick up has a cut off time of 5:00PM from Sunday through Thursday. All orders placed before the cut off time will be processed from the office on the same day. For orders placed beyond the cut off time (Sunday to Thursday), processing and pick up will be on the next business day.</p>
+          <p class="text mb-0">Orders placed on Fridays and public holidays will be processed and picked up on the following business day.</p>
+          <p class="text mb-0">Please note that we aim to deliver within the time agreed upon at purchase. However, we do not guarantee that all orders will be delivered within the presented time frame. Sonee Sports and delivery partners may follow national and declared holidays; these no-operation days may also affect the processing and shipping of your packages.</p>
+          <p class="text mb-0">Delivery scheduling: Maldives Post Limited's delivery time frame is within five business days from Sonee Sports to the customer.</p>
+          <p class="text mb-0">Location/ Coverage area: We deliver items within Maldives through Maldives Cargo Services.
+
+            Payments:</p>
+            <p class="text">Payment methods: For transactions online, we accept credit or debit cards. For card payments you will be redirected to the Bank of Maldives Payment Gateway. You will be redirected back to our website once the payment is processed. In-store, we accept cash, credit and debit cards as well.</p>
+
+
+        </div>
+
+
+
+
+
+    </div>
+    <!-- footer---------------------------------------------------------------->
+
+    <footer class="py-md-5" id="footer">
+
+
+        <div class=" d-flex justify-content-around flex-wrap" id="foot-cont">
+
+            <div class="navigate d-flex flex-column flex-wrap" id="alinks">
+                <h3 class="text-decoration-underline mb-4">NAVIGATE</h3>
+                <a href="refund.html" class="text-decoration-none">Replacements, Returns & Refunds</a>
+                <a href="newspromotion.html" class="text-decoration-none">News & Promotions</a>
+                <a href="about.html" class="text-decoration-none">About Us</a>
+                <a href="termsofservice.html" class="text-decoration-none">Terms of Service</a>
+                <a href="privacy.html" class="text-decoration-none">Privacy Policy</a>
+                <a href="htorder.html" class="text-decoration-none">How to Order</a>
+            </div>
+
+            <div class="address text-center">
+                <h3 class="text-decoration-underline mb-4 fs-4"><img src="images/instore icon.png"
+                        class="img-fluid px-2">IN-STORE SHOPPING
+                </h3>
+                <p>House of StyleCo,</p>
+                <p>South Fairlands,</p>
+                <p>Salem - 636302</p>
+                <img src="images/social media icons.png" class="img-fluid my-5">
+            </div>
+
+            <div class="company">
+                <h3 class="text-decoration-underline mb-4 fs-4">StyleCo,</h3>
+                <p>Reg: SI203014054</p>
+                <p>TIN: 109201GST1204</p>
+                <p>Phone: +91 90121 90121</p>
+                <p>Email: styleco@gmail.com</p>
+            </div>
+
+        </div>
+    </footer>
+    <div class="copy py-3">
+        <p>StyleCo, <img src="images/copyright icon.png" class="img-fluid"> 2022</p>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.querySelector('form[role="search"]');
+    const searchInput = document.getElementById('input');
+    
+    searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        handleSearch();
+    });
+    
+    // Also trigger search when search icon is clicked
+    document.querySelector('.bi-search').addEventListener('click', function() {
+        handleSearch();
+    });
+    
+    function handleSearch() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        
+        // Map search terms to corresponding pages
+        const searchMap = {
+            'men': 'men.html',
+            'man': 'men.html',
+            'male': 'men.html',
+            'women': 'women.html',
+            'woman': 'women.html',
+            'female': 'women.html',
+            'girl': 'girls.html',
+            'girls': 'girls.html',
+            'boy': 'boys.html',
+            'boys': 'boys.html',
+            'baby': 'newborn.html',
+            'babies': 'newborn.html',
+            'newborn': 'newborn.html',
+            'infant': 'newborn.html'
+        };
+        
+        // Check if search term matches any key in our map
+        for (const [key, value] of Object.entries(searchMap)) {
+            if (searchTerm.includes(key)) {
+                window.location.href = value;
+                return;
+            }
+        }
+        
+        // Default action if no match found
+        alert('No matching category found. Please try searching for: men, women, girls, boys, or baby');
+    }
+});
+</script>
+</body>
+
+</html>

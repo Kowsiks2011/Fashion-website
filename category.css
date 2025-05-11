@@ -1,0 +1,103 @@
+body{
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+#top{
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    background-color: #F1F6FC;
+    padding: 1rem;
+}
+
+#firstnav{
+    background-color: #071937;
+    /* padding: 0.5rem 1.5rem; */
+}
+.navbar-brand{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+#input{
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#secondnav{
+    background-color: #F1F6FC;
+    padding: 1rem;
+    display: flex;
+}
+#snfont{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+}
+#snfont:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+.category{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+/* header end -----------------------------------------------------------*/
+#bc{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+#cathead{
+    font-weight: 700;
+    font-size: 2rem;
+}
+#cat-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+   
+    
+}
+
+
+/* footer-------------------------------------------------------------- */
+#foot-cont,a{
+  color: white;
+ font-size: 1.4rem;
+}
+#alinks a:hover{
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+#footer{
+    background-color: #071937;
+}
+.copy{
+   font-size: 1.6rem; 
+   font-weight: 600;
+   background-color: #F1F6FC;
+   text-align: center;
+}
+/* mquery */
+@media (max-width: 576px) {
+    #foot-cont {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .navigate, .address, .company {
+      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 300px;
+    }
+    .navigate a {
+      font-size: 1.2rem;
+    }
+    .address img {
+      max-width: 120px;
+    }
+  }

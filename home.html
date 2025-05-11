@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>StyleCo</title>
+</head>
+
+<body>
+  <header>
+    <p id="top" class="text-center mb-0">Sale : upto 70% off*</p>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="firstnav">
+      <div class="container-fluid p-3">
+        <!-- Left-aligned brand -->
+        <a class="navbar-brand text-light ms-5" href="#">StyleCo.</a>
+
+        <!-- Toggler button (moved outside the collapsible content) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <!-- Centered search form -->
+          <form class="d-flex ms-auto my-2 my-lg-0 " role="search" style="max-width: 800px; width: 100%;">
+            <div class="position-relative w-100">
+              <input class="form-control ps-5 rounded-pill" id="input" type="search" placeholder="Search..."
+                aria-label="Search">
+              <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-4 fs-4" id="searchicon"></i>
+            </div>
+          </form>
+
+          <!-- Right-aligned icons -->
+          <ul class="navbar-nav me-auto d-flex align-items-center">
+            <li class="nav-item px-2">
+              <a class="nav-link" href="cart.html">
+                <img src="images/cart.png" alt="Cart" style="height: 35px; width: 35px;">
+              </a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="wishlist.html">
+                <img src="images/heart icon.png" alt="Wishlist" style="height: 35px; width: 35px;">
+              </a>
+            </li>
+            <li class="nav-item px-2 d-flex align-items-center">
+              <span class="text-light fs-3" style="line-height: 1;">|</span>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="">
+                <img src="images/user icon.png" alt="Account" style="height: 35px; width: 35px;">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- second - navbar -->
+    <nav class="navbar navbar-expand-lg" id="secondnav">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item px-4">
+                      <a class="nav-link text-dark home" id="snfont" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item ps-4">
+                      <a class="nav-link  text-dark category" id="snfont" href="category.html"
+                          role="button">Categories</a>
+                  </li>
+                  <li class="nav-item dropdown pe-4">
+
+
+                      <a class="nav-link dropdown-toggle text-dark category" id="snfont" href="" role="button"
+                          data-bs-toggle="dropdown">
+                      </a>
+
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item text-dark" id="snfont" href="newborn.html">Baby Cloths</a></li>
+                          <li><a class="dropdown-item text-dark" id="snfont" href="boys.html">Boys</a></li>
+                          <li><a class="dropdown-item text-dark" id="snfont" href="girls.html">Girls</a></li>
+                          <li><a class="dropdown-item text-dark" id="snfont" href="men.html">Men</a></li>
+                          <li><a class="dropdown-item text-dark" id="snfont" href="women.html">Women</a></li>
+                          <li><a class="dropdown-item text-dark" id="snfont" href="#">Sunny Wear</a></li>
+                          <li><a class="dropdown-item text-dark" id="snfont" href="#">Winter Wear</a></li>
+
+                      </ul>
+                  </li>
+                  <li class="nav-item px-4">
+                      <a class="nav-link text-dark" id="snfont" href="sale.html">Sale</a>
+                  </li>
+                  <li class="nav-item px-4">
+                      <a class="nav-link text-dark about" id="snfont" href="about.html">About Us</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  </header>
+  <!-- selling brands -->
+  <div id="brands" class="p-4">
+    <div class="regtitle">
+      <p id="regtitle" class="">REFLECT YOUR STYLE</p>
+    </div>
+
+    <div class="image-container d-flex justify-content-center py-3 flex-wrap">
+      <!-- First Image with Buttons -->
+      <div class="position-relative me-3 mb-2">
+        <img src="images/register header image 1.png" class="img-fluid rounded" alt="Registration header image 1">
+        <div class="position-absolute bottom-0 start-0 p-2 m-4 w-100 d-flex justify-content-around">
+          <a href="#" class="btn  rounded-pill px-3 d-flex align-items-center fs-5" id="discoverbtn">
+            Discover Now <img src="images/arrow icon.png" class="ms-2" style="height: 20px;">
+          </a>
+          <a href="#" class="btn  rounded-pill px-3 d-flex align-items-center" id="contactbtn">
+            Contact Now <img src="images/arrow icon-right.png" class="ms-2" style="height: 20px;">
+          </a>
+        </div>
+      </div>
+      <!-- Other Images -->
+      <img src="images/reg-header image 2.png" class="img-fluid rounded me-3 mb-2" alt="Registration header image 2">
+      <img src="images/reg-header image 3.png" class="img-fluid rounded mb-2" alt="Registration header image 3">
+    </div>
+    <!-- brand-container -->
+    <div class="brand-container my-5 px-5 d-flex justify-content-around align-items-center flex-wrap">
+      <img src="images/levis.png" class="img-fluid ms-5" alt="brand-name">
+      <img src="images/valentina logo.png" class="img-fluid" alt="brand-name">
+      <img src="images/ralph logo.png" class="img-fluid" alt="brand-name">
+      <img src="images/gucci logo.png" class="img-fluid" alt="brand-name">
+      <img src="images/fendi logo.png" class="img-fluid" alt="brand-name">
+      <img src="images/adidas logo.png" class="img-fluid" alt="brand-name">
+      <img src="images/d&g logo.png" class="img-fluid me-5" alt="brand-name">
+    </div>
+  </div>
+  <!-- horizontal-image -->
+  <div class="banner px-5" style="background-color: #F1F6FC;">
+    <!-- Left card -->
+    <div class="card bg-transparent border-0 px-5">
+      <!-- Row for columns -->
+      <div class="row px-5 align-items-center">
+        <!-- Column 1: Image -->
+        <div class="col-md-4 my-lg-0">
+          <img src="images/reg-image 4.png" class="img-fluid rounded" alt="Registration image">
+        </div>
+        <!-- Column 2: Text -->
+        <div class="col-md-4">
+          <div class="card-body" id="coltext">
+            <p class="card-text"><span style="color: grey;">EXPLORE TODAY'S FASHION THAT MIRRORS YOUR</span></p>
+            <p class="card-text">PERSONALITY, ELEVATING YOUR CONFIDENCE, EMBRACE STYLES, & INDIVIDUALITY.</p>
+          </div>
+        </div>
+        <!-- Column 3: Button and Image -->
+        <div class="col-md-4 text-end">
+          <div class="card-body mb-5 mt-4">
+            <a href="category.html" class="btn btn-primary rounded-pill" id="explorebtn" aria-label="Explore fashion styles">Explore
+              Now</a>
+          </div>
+          <img src="images/blazzerhang.jpg" class="img-fluid rounded mt-2" alt="Blazer on hanger">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- our collection -->
+  <div class="container py-md-5 my-4">
+    <div id="our-collection" class="">
+      <h2 class="text px-5 fs-3" id="oc-head">OUR COLLECTION</h2>
+      <p class="text-container px-md-5 py-4" id="oc-content">Step into the world of StyleCo., where each collection
+        tells its own
+        story. Form minimalist essential to bold statement pieces, our curated collections are designed to suit every
+        occasion and style.</p>
+    </div>
+  </div>
+
+  <!-- image - container -->
+  <div class="container">
+    <!-- buttons -->
+<div class="button px-4">
+  <button type="button" class="mainbtn btn rounded-pill fs-4 px-4 py-0 mx-2 category-btn active" 
+          data-target="kurtas-cont" data-seeall="women.html">Kurtas</button>
+  <button type="button" class="mainbtn btn rounded-pill fs-4 px-4 py-0 mx-2 category-btn" 
+          data-target="winter-cont" data-seeall="men.html">Winter Wear</button>
+  <button type="button" class="mainbtn btn rounded-pill fs-4 px-4 py-0 mx-2 category-btn" 
+          data-target="dresses-cont" data-seeall="women.html">Dresses</button>
+  <button type="button" class="mainbtn btn rounded-pill fs-4 px-4 py-0 mx-2 category-btn" 
+          data-target="babyonesies-cont" data-seeall="newborn.html">Baby Onesies</button>
+  <button type="button" class="mainbtn btn rounded-pill fs-4 px-4 py-0 mx-2 category-btn" 
+          data-target="skirt-cont" data-seeall="women.html">Skirt</button>
+  <button type="button" class="mainbtn btn rounded-pill fs-4 px-4 py-0 mx-2 category-btn" 
+          data-target="tshirt-cont" data-seeall="men.html">T-Shirt</button>
+  <a href="women.html" class="btn bg-transparent fs-4 px-5 py-0" id="seeall">See All</a>
+</div>
+
+    <!-- kurtas-cont---------------->
+    <div class="p-5" id="kurtas-cont">
+
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg kurta 1.png" class="card-img-top" alt="reg kurta1"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>LIBAS</p>
+                <p>₹550</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Mustard Solid Kurta</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg kurta 2.png" class="card-img-top" alt="reg kurta2"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>W for Women</p>
+                <p>₹1100</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Rust Printed Cotton</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg kurta  3.png" class="card-img-top" alt="reg kurta3"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Anouk</p>
+                <p>₹800</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Lime Yolk Design</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg kurta 4.png" class="card-img-top" alt="reg kurta4"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Dressberry</p>
+                <p>₹780</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Blue Embroidered</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- kurtas-cont-end------------------------------------------------->
+
+
+    <!-- winter-cont---------------->
+    <div class="p-5 d-none" id="winter-cont">
+
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg winter 1.png" class="card-img-top" alt="reg winter1"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Roy</p>
+                <p>₹850</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Leather Leggings</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg winter 2.png" class="card-img-top" alt="reg winter2"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Alder Fleece</p>
+                <p>₹900</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Lined Coords</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg winter 3.png" class="card-img-top" alt="reg winter3"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Nova Elegant</p>
+                <p>₹1200</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Pleated Blazzer Dress</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg winter 4.png" class="card-img-top" alt="reg winter4"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Emy Luxe</p>
+                <p>₹740</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Soft Knit Sweater</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- winter-cont-end-------------------------------------------------->
+
+    <!-- dresses-cont---------------->
+    <div class="p-5 d-none" id="dresses-cont">
+
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg dresses 1.png" class="card-img-top" alt="reg dresses1"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Petal & Pup</p>
+                <p>₹520</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Pleated Maxi Dress</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg dresses 2.png" class="card-img-top" alt="reg dresses2"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Vince Camuto</p>
+                <p>₹700</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Tiered Midi Dress</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg dresses 3.png" class="card-img-top" alt="reg dresses3"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>AST Label</p>
+                <p>₹1000</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Floral Midi Sundress</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg dresses 4.png" class="card-img-top" alt="reg dresses4"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Nordstorm</p>
+                <p>₹850</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Line Dress</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- dresses-cont-end-------------------------------------------------->
+
+
+    <!-- babyonesies-cont---------------->
+    <div class="p-5 d-none" id="babyonesies-cont">
+
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg baby 1.png" class="card-img-top" alt="reg baby1"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>SnooZip</p>
+                <p>₹874</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Pleated Maxi Dress</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg baby 2.png" class="card-img-top" alt="reg baby2"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Milk & Baby</p>
+                <p>₹540</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Tiered Midi Dress</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg baby 3.png" class="card-img-top" alt="reg baby3"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Mothercare India</p>
+                <p>₹940</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Floral Midi Sundress</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg baby 4.png" class="card-img-top" alt="reg baby4"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>H&M</p>
+                <p>₹1400</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Line Dress</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- babyonesies-cont-end-------------------------------------------------->
+
+    <!-- skirt-cont---------------->
+    <div class="p-5 d-none" id="skirt-cont">
+
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg skirt 1.png" class="card-img-top" alt="reg skirt1"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Asos</p>
+                <p>₹670</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Pure Cotton Tassel</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg skirt 2.png" class="card-img-top" alt="reg skirt2"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Sezane</p>
+                <p>₹840</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Polka Dot Mini A-Line</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg skirt 3.png" class="card-img-top" alt="reg skirt3"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Marks & Spencer</p>
+                <p>₹1700</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">A-Line Skirt</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg skirt 4.png" class="card-img-top" alt="reg skirt4"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Monoloq</p>
+                <p>₹1100</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Bubble Hem Skirt</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- skirt-cont-end-------------------------------------------------->
+
+    <!-- T-Shirt-cont---------------->
+    <div class="p-5 d-none" id="tshirt-cont">
+
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg t-shirt 1.png" class="card-img-top" alt="reg t-shirt1"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>GritStones</p>
+                <p>₹999</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Luxury Men's Polo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg t-shirt 2.png" class="card-img-top" alt="reg t-shirt2"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>C-IN2 New York</p>
+                <p>₹450</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Crew Neck Cotton</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg t-shirt 3.png" class="card-img-top" alt="reg t-shirt3"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>AJIO</p>
+                <p>₹1450</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Regular Fit T-Shirt</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-60 border-0">
+            <a href="girljean.html"><img src="images/reg t-shirt 4.png" class="card-img-top" alt="reg t-shirt4"></a>
+            <div class="card-body px-0">
+              <div class="card-title" id="rate">
+                <p>Nextt</p>
+                <p>₹850</p>
+              </div>
+              <p class="card-text fs-5" id="ratetext">Block T-Shirt</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- skirt-cont-end-------------------------------------------------->
+
+  </div>
+
+  <!-- button-container end-------------------------------------------------->
+
+  <div class="card mb-3" id="banner2">
+
+    <div class="row p-md-5">
+
+      <div class="col-md-6">
+        <img src="..." class="img-fluid rounded-start" alt="...">
+      </div>
+
+      <div class="col-md-6">
+        <div class="card-body">
+          <p class="text-light mb-4" id="text-head">Offer Running for All Month</p>
+          <h2 class="offer-text mb-4" id="text-body">50% OFF ON ALL NEW ARRAIVALS</h2>
+          <a href="category.html" class="btn rounded-pill py-1 px-4 bg-light" id="explore2btn">Explore More</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!--button-container end -->
+
+
+  <!-- journal----------------------------------------------------------------------->
+
+  <div id="journal" class="">
+
+    <div class="journaltitle">
+      <p id="journaltitle" class="">REFLECT YOUR JOURNAL</p>
+      <p id="journalcontent" class="my-5 text-container text">Stay updated with the latest fashion trends,style tips,and the behind
+        -the-scenes of
+        our collections. Get inspired and learn how to reflect your unique style everyday.</p>
+    </div>
+
+    <div class="image-container row">
+
+      <!-- First Image with Buttons -->
+      <div class="col-md-6">
+        <img src="images/reg -journal image 1.png" class="img-fluid rounded" alt="JOURNAL Image1">
+
+        <div class="text-container my-4">
+          <div class="journal-head mb-3" id="jhead">Fashion trend you should know in 2025</div>
+          <p class="journal-text mb-3" id="jcont">Stay updated with the latest fashion trends,style tips,and the behind
+            -the-scenes of
+            our collections. Get inspired and learn how to reflect your unique style everyday.</p>
+          <a href="#" class="btn  rounded-pill px-3" id="rmbtn">
+            Read More<img src="images/arrow icon-right.png" class="ms-2" style="height: 20px;">
+          </a>
+        </div>
+      </div>
+      <!-- Second Image with Buttons -->
+      <div class="col-md-3">
+        <img src="images/reg-journal image 2.png" class="img-fluid rounded" alt="JOURNAL Image2">
+
+        <div class="text-container my-4">
+          <div class="journal-head mb-3" id="jhead">Summer Pieces To Transition</div>
+          <p class="journal-text mb-3" id="jcont">Get inspired and learn how to reflect your unique style everyday.</p>
+          <a href="#" class="btn  rounded-pill px-3" id="rmbtn">
+            Read More <img src="images/arrow icon-right.png" class="ms-2" style="height: 20px;">
+          </a>
+        </div>
+      </div>
+      <!-- Third Image with Buttons -->
+      <div class="col-md-3">
+        <img src="images/reg-journal image 3.png" class="img-fluid rounded" alt="JOURNAL Image3">
+
+        <div class="text-container my-4">
+          <div class="journal-head mb-3" id="jhead">The best fabric for Babies</div>
+          <p class="journal-text mb-3" id="jcont">Get inspired and learn how to reflect your unique style everyday.</p>
+          <a href="#" class="btn rounded-pill px-3 " id="rmbtn">
+            Read More <img src="images/arrow icon-right.png" class="ms-2" style="height: 20px;">
+          </a>
+        </div>
+
+      </div>
+</div>
+    </div>
+    <!-- journal end--------------------------- -->
+    <!-- email banner---------------------------------------------------------- -->
+    <div class="container py-4" id="emailBanner">
+      <img src="images/freepik__opt-to-the-container__72595.png" alt="bannergirl" class="img-fluid ">
+
+      <div class="input-group flex-wrap py-3 mt-0" id="ban-email">
+        <input type="email" class="px-4 w-50 fs-5 border-0 text-light " placeholder="Enter your Email address here...">
+        <span class="input-group-text btn" id="addon-wrapping"><img src="images/arrow icon-right.png"></span>
+      </div>
+
+    </div>
+
+    <!-- email banner end-------------------------------------------------------------->
+    <footer class="py-md-5" id="footer">
+      <div class="d-flex justify-content-around flex-wrap" id="foot-cont">
+        <div class="navigate d-flex flex-column flex-wrap fs-4" id="alinks">
+          <h3 class="text-decoration-underline mb-4">NAVIGATE</h3>
+          <a href="refund.html" class="text-decoration-none">Replacements, Returns & Refunds</a>
+          <a href="newspromotion.html" class="text-decoration-none">News & Promotions</a>
+          <a href="about.html" class="text-decoration-none">About Us</a>
+          <a href="termsofservice.html" class="text-decoration-none">Terms of Service</a>
+          <a href="privacy.html" class="text-decoration-none">Privacy Policy</a>
+          <a href="htorder.html" class="text-decoration-none">How to Order</a>
+        </div>
+    
+        <div class="address text-center">
+          <h3 class="text-decoration-underline mb-4 fs-4">
+            <img src="images/instore icon.png" class="img-fluid px-2">IN-STORE SHOPPING
+          </h3>
+          <p>House of StyleCo,</p>
+          <p>South Fairlands,</p>
+          <p>Salem - 636302</p>
+          <img src="images/social media icons.png" class="img-fluid my-5" style="max-width: 150px;">
+        </div>
+    
+        <div class="company">
+          <h3 class="text-decoration-underline mb-4 fs-4">StyleCo,</h3>
+          <p>Reg: SI203014054</p>
+          <p>TIN: 109201GST1204</p>
+          <p>Phone: +91 90121 90121</p>
+          <p>Email: styleco@gmail.com</p>
+        </div>
+      </div>
+    </footer>
+    <div class="copy py-3">
+      <p>StyleCo, <img src="images/copyright icon.png"class="img-fluid"> 2022</p>
+    </div>
+  
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"></script>
+     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const categoryBtns = document.querySelectorAll('.category-btn');
+  const seeAllBtn = document.getElementById('seeall');
+  
+  categoryBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Remove active class from all buttons
+      categoryBtns.forEach(b => b.classList.remove('active'));
+      
+      // Add active class to clicked button
+      this.classList.add('active');
+      
+      // Hide all content sections
+      document.querySelectorAll('[id$="-cont"]').forEach(section => {
+        section.classList.add('d-none');
+      });
+      
+      // Show the selected content section
+      const targetId = this.getAttribute('data-target');
+      document.getElementById(targetId).classList.remove('d-none');
+      
+      // Update See All link with the specific page from data-seeall attribute
+      seeAllBtn.href = this.getAttribute('data-seeall');
+    });
+  });
+  
+  // Initialize with Kurtas showing and proper See All link
+  document.getElementById('kurtas-cont').classList.remove('d-none');
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.querySelector('form[role="search"]');
+    const searchInput = document.getElementById('input');
+    
+    searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        handleSearch();
+    });
+    
+    // Also trigger search when search icon is clicked
+    document.querySelector('.bi-search').addEventListener('click', function() {
+        handleSearch();
+    });
+    
+    function handleSearch() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        
+        // Map search terms to corresponding pages
+        const searchMap = {
+            'men': 'men.html',
+            'man': 'men.html',
+            'male': 'men.html',
+            'women': 'women.html',
+            'woman': 'women.html',
+            'female': 'women.html',
+            'girl': 'girls.html',
+            'girls': 'girls.html',
+            'boy': 'boys.html',
+            'boys': 'boys.html',
+            'baby': 'newborn.html',
+            'babies': 'newborn.html',
+            'newborn': 'newborn.html',
+            'infant': 'newborn.html'
+        };
+        
+        // Check if search term matches any key in our map
+        for (const [key, value] of Object.entries(searchMap)) {
+            if (searchTerm.includes(key)) {
+                window.location.href = value;
+                return;
+            }
+        }
+        
+        // Default action if no match found
+        alert('No matching category found. Please try searching for: men, women, girls, boys, or baby');
+    }
+});
+
+
+</script>
+</body>
+
+</html>

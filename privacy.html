@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="privacy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>StyleCo</title>
+</head>
+
+<body>
+    <header>
+        <p id="top" class="text-center mb-0">Sale : upto 70% off*</p>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg" id="firstnav">
+            <div class="container-fluid p-3">
+                <!-- Left-aligned brand -->
+                <a class="navbar-brand text-light ms-5" href="#">StyleCo.</a>
+
+                <!-- Toggler button (moved outside the collapsible content) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Centered search form -->
+                    <form class="d-flex ms-auto my-2 my-lg-0 " role="search" style="max-width: 800px; width: 100%;">
+                        <div class="position-relative w-100">
+                            <input class="form-control ps-5 rounded-pill" id="input" type="search"
+                                placeholder="Search..." aria-label="Search">
+                            <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-4 fs-4"></i>
+                        </div>
+                    </form>
+
+                    <!-- Right-aligned icons -->
+                    <ul class="navbar-nav me-auto d-flex align-items-center">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="cart.html">
+                                <img src="images/cart.png" alt="Cart" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="wishlist.html">
+                                <img src="images/heart icon.png" alt="Wishlist" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                        <li class="nav-item px-2 d-flex align-items-center">
+                            <span class="text-light fs-3" style="line-height: 1;">|</span>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">
+                                <img src="images/user icon.png" alt="Account" style="height: 35px; width: 35px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- second - navbar -->
+        <nav class="navbar navbar-expand-lg" id="secondnav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark home" id="snfont" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link  text-dark category" id="snfont" href="category.html"
+                                role="button">Categories</a>
+                        </li>
+                        <li class="nav-item dropdown pe-4">
+
+
+                            <a class="nav-link dropdown-toggle text-dark category" id="snfont" href="" role="button"
+                                data-bs-toggle="dropdown">
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Baby Cloths</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Boys</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Girls</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Men</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Women</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Sunny Wear</a></li>
+                                <li><a class="dropdown-item text-dark" id="snfont" href="#">Winter Wear</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark" id="snfont" href="#">Sale</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link text-dark about" id="snfont" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- breadcrum------------------------------------------------------------>
+        <nav style="--bs-breadcrumb-divider: '>' ;" aria-label="breadcrumb" class="m-md-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-dark px-2"
+                        id="bc">Home</a></li>
+                <li class="breadcrumb-item px-2" id="bc" aria-current="page">Privacy Policy</li>
+            </ol>
+        </nav>
+    </header>
+    <!-- content-------------------------------------------------------------------->
+
+    <!-- paragraph------------------------------------------------------------>
+    <div class="m-md-5" id="paragraphs">
+
+        <div class="text-container1 py-4">
+            <h3 class="text ">PRIVACY POLICY</h3>
+            <p class="text mb-0">Sonee Sports works to ensure that your privacy is protected when using our website. We have
+                a policy setting out how your personal data will be processed and protected. Applicable law and our
+                practices change over time. If we decide to update our Policy, we will post the changes on this site.
+                You should check this page from time to time to ensure that you are happy with any changes.</p>
+            <p class="text mb-0">Your Personal Data</p>
+            <p class="text mb-0">In providing your personal data, you consent to us using the data collected in order to meet
+                our commitments to you and to provide you with the service you expect. We need your data for the
+                following purposes:</p>
+            <ul class="mb-0">
+                <li>To create your personal account at Sonee Sports (i.e. your name and email address).</li>
+                <li>To validate that you are of legal age for shopping online (i.e. date of birth).</li>
+                <li>To process your orders through our website (i.e. your name, postal address, and mode of payment).
+                </li>
+                <li>To send you marketing offers such as newsletters and latest sports Sonee affiliated events (i.e.
+                    your name and email address).</li>
+                <li>To update and contact you in the event of any problems with the delivery of your items (i.e. contact
+                    number, address).</li>
+                <li>To answer your queries and to inform you of important updates (i.e. your email address).</li>
+                <li>To notify the winners in competitions arranged online if in case you joined (i.e. your email
+                    address, name, home address and telephone number).</li>
+                <li>To analyze your personal data to provide you with relevant marketing offers and information (i.e.
+                    name, buying habits).</li>
+            </ul>
+            <p class="text">We will only keep your data for as long as necessary to carry out our services to you and
+                for as long as we are required by the Maldivian laws. After this, your personal data will be deleted. We
+                cannot remove your data when there is a legal storage requirement, such as for taxation purposes or
+                anything legally important held by the Maldivian Laws.
+
+                User Profile Image Upload - Sonee Sports Mobile App</p>
+            <p class="text mb-0 mt-5">At Sonee Sports Mobile App, we are committed to safeguarding the privacy of our users. This
+                Privacy Policy outlines how we collect, use, disclose, and protect your personal information,
+                particularly concerning user profile image uploads. By using our services and uploading your profile
+                image, you agree to the terms outlined in this policy.</p>
+            <p class="text mb-0">Information We Collect:</p>
+
+            <p class="text">When you upload a profile image on Sonee Sports, we may collect the following information:
+            </p>
+
+            <p class="text py-md-5">Profile Image: The image you upload to represent yourself on our platform.</p>
+            <p class="text mb-0">User Identification: We may collect user identification information associated with the
+                uploaded image for security and verification purposes.</p>
+            <p class="text mb-0">How We Use Your Information:</p>
+            <p class="text">We utilize the information collected through user profile image uploads for the following
+                purposes:</p>
+
+
+        </div>
+
+
+
+
+
+    </div>
+    <!-- footer---------------------------------------------------------------->
+
+    <footer class="py-md-5" id="footer">
+
+
+        <div class=" d-flex justify-content-around flex-wrap" id="foot-cont">
+
+            <div class="navigate d-flex flex-column flex-wrap" id="alinks">
+                <h3 class="text-decoration-underline mb-4">NAVIGATE</h3>
+                <a href="refund.html" class="text-decoration-none">Replacements, Returns & Refunds</a>
+                <a href="newspromotion.html" class="text-decoration-none">News & Promotions</a>
+                <a href="about.html" class="text-decoration-none">About Us</a>
+                <a href="termsofservice.html" class="text-decoration-none">Terms of Service</a>
+                <a href="privacy.html" class="text-decoration-none">Privacy Policy</a>
+                <a href="" class="text-decoration-none">How to Order</a>
+            </div>
+
+            <div class="address text-center">
+                <h3 class="text-decoration-underline mb-4 fs-4"><img src="images/instore icon.png"
+                        class="img-fluid px-2">IN-STORE SHOPPING
+                </h3>
+                <p>House of StyleCo,</p>
+                <p>South Fairlands,</p>
+                <p>Salem - 636302</p>
+                <img src="images/social media icons.png" class="img-fluid my-5">
+            </div>
+
+            <div class="company">
+                <h3 class="text-decoration-underline mb-4 fs-4">StyleCo,</h3>
+                <p>Reg: SI203014054</p>
+                <p>TIN: 109201GST1204</p>
+                <p>Phone: +91 90121 90121</p>
+                <p>Email: styleco@gmail.com</p>
+            </div>
+
+        </div>
+    </footer>
+    <div class="copy py-3">
+        <p>StyleCo, <img src="images/copyright icon.png" class="img-fluid"> 2022</p>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.querySelector('form[role="search"]');
+    const searchInput = document.getElementById('input');
+    
+    searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        handleSearch();
+    });
+    
+    // Also trigger search when search icon is clicked
+    document.querySelector('.bi-search').addEventListener('click', function() {
+        handleSearch();
+    });
+    
+    function handleSearch() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        
+        // Map search terms to corresponding pages
+        const searchMap = {
+            'men': 'men.html',
+            'man': 'men.html',
+            'male': 'men.html',
+            'women': 'women.html',
+            'woman': 'women.html',
+            'female': 'women.html',
+            'girl': 'girls.html',
+            'girls': 'girls.html',
+            'boy': 'boys.html',
+            'boys': 'boys.html',
+            'baby': 'newborn.html',
+            'babies': 'newborn.html',
+            'newborn': 'newborn.html',
+            'infant': 'newborn.html'
+        };
+        
+        // Check if search term matches any key in our map
+        for (const [key, value] of Object.entries(searchMap)) {
+            if (searchTerm.includes(key)) {
+                window.location.href = value;
+                return;
+            }
+        }
+        
+        // Default action if no match found
+        alert('No matching category found. Please try searching for: men, women, girls, boys, or baby');
+    }
+});
+</script>
+</body>
+
+</html>

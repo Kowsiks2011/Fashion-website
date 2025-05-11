@@ -1,0 +1,229 @@
+body{
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+#top{
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    background-color: #F1F6FC;
+    padding: 1rem;
+}
+
+#firstnav{
+    background-color: #071937;
+    /* padding: 0.5rem 1.5rem; */
+}
+.navbar-brand{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+#input{
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#secondnav{
+    background-color: #F1F6FC;
+    padding: 1rem;
+    display: flex;
+}
+#snfont{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+/* selling brands----------------------- */
+
+#regtitle{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 9rem;
+}
+#discoverbtn{
+    background-color: #071937;
+    color: white;
+}
+#contactbtn{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+/* --------brand container------------------------- */
+
+#coltext{
+    font-size: 2rem;
+    font-weight:800;
+    
+}
+#explorebtn{
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* --------------our collection------------ */
+
+#our-collection{
+    width: 80%;
+}
+#oc-head{
+font-size: 2.2rem;
+font-weight: 700;
+}
+#oc-content{
+font-size: 1.6rem;
+font-weight: 450;
+}
+
+.mainbtn{
+    border: 2px solid #071937;
+    color: black;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.mainbtn:hover
+{
+    color: rgb(247, 245, 245)!important;
+    background-color: #071937!important;
+}
+
+#seeall{
+    /* border: 2px solid rgb(169, 11, 11); */
+    color: black;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-left: 4em;
+    border-style: none;
+}
+
+
+#rate{
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#ratetext{
+    font-weight: 500;
+    /* border: 2px solid red; */
+    margin-top: -20px;
+
+}
+
+
+.category-btn.active {
+  background-color: #071937 !important;
+  color: white !important;
+}
+
+
+/* banner2----------------------------- */
+#banner2{
+    background-color: #071937;
+}
+#text-head{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+#text-body{
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+}
+#explore2btn{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+/* journal-------------------- */
+#journaltitle{
+font-size: 2rem;
+font-weight: 800;
+
+}
+#journalcontent{
+font-size: 1.6rem;
+font-weight: 500;
+}
+#journal{
+    padding: 8em;
+}
+#jhead{
+font-size: 2rem;
+font-weight: 700;
+}
+#jcont{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+#rmbtn{
+    font-size: 1.2rem;
+    background-color: #071937;
+    color: white;
+}
+
+/* email banner---------------------------- */
+#ban-email input{
+    background-color: rgba(0, 0, 0,0.5);
+}
+#ban-email input:focus{
+    outline: none;
+    background-color: black;
+    color: white;
+
+}
+#addon-wrapping{
+    background-color: rgb(66, 133, 244);
+}
+
+
+/* footer-------------------------------------------------------------- */
+#foot-cont,a{
+  color: white;
+ font-size: 1.4rem;
+}
+#alinks a:hover{
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+#footer{
+    background-color: #071937;
+}
+.copy{
+   font-size: 1.6rem; 
+   font-weight: 600;
+   background-color: #F1F6FC;
+   text-align: center;
+}
+
+
+
+/* mquery */
+@media (max-width: 576px) {
+    #foot-cont {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .navigate, .address, .company {
+      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 300px;
+    }
+    .navigate a {
+      font-size: 1.2rem;
+    }
+    .address img {
+      max-width: 120px;
+    }
+  }
